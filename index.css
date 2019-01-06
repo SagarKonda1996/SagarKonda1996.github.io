@@ -7,25 +7,28 @@ display: flex;
 flex-direction: column;	
 height: 100vh;
 flex-wrap: wrap;
+margin: 5vw 5vw 5vw 5vw;
 }
 .header
 {
 background-color: red;
-height: 20vh;
+height: 5vh;
 width:100vw;
+padding-bottom:1vh;
 }
 .content
 {
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
+	height:90vh;
 }
 .content .leftcol
 {
 	display: flex;
 	flex-direction: column;
 	background-color: yellow;
-	height: 70vh;
+	height: 90vh;
 	width:20vw;
 }
 .content .maincontent
@@ -33,7 +36,7 @@ width:100vw;
 	display: flex;
 	flex-direction: column;
 	background-color: green;
-	height: 70vh;
+	height: 90vh;
 	width: 60vw;
 }
 .content .rightcol
@@ -41,7 +44,7 @@ width:100vw;
 display: flex;
 	flex-direction: column;
 	background-color: blue;	
-	height: 70vh;
+	height: 90vh;
 	width: 20vw;
 }
 .footer
@@ -50,5 +53,55 @@ display: flex;
 	flex-direction: column;
 	background-color: black;
 	width: 100vw;
-	height: 10vh;
+	height: 5vh;
+}
+@media screen and (min-width:768px )
+{
+	.content .leftcol
+	{
+		flex-grow: 1;
+		flex-shrink: 2;
+	}
+	.content .maincontent
+	{
+		flex-grow: 2;
+		flex-shrink: 1;
+	}
+	.content .rightcol
+	{
+		flex-grow: 1;
+		flex-shrink: 2;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 767px)
+{
+.content .rightcol
+{
+background-color: grey;
+}
+
+}
+@media screen and (max-width: 480px)
+{
+.content
+	{
+		flex-direction: column;
+	}
+	.content .leftcol
+	{
+		width:100vw;
+		height:15vh;
+	}
+	.content .maincontent
+	{
+		width:100vw;
+		height: 40vh;
+	}
+	.content .rightcol
+	{
+		width:100vw;
+		height: 15vh;
+	}
+}
+
 }
