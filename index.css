@@ -28,7 +28,6 @@ padding-bottom:1vh;
 	display: flex;
 	flex-direction: column;
 	background-color: yellow;
-	height: 90vh;
 	width:20vw;
 }
 .content .maincontent
@@ -36,7 +35,6 @@ padding-bottom:1vh;
 	display: flex;
 	flex-direction: column;
 	background-color: green;
-	height: 90vh;
 	width: 60vw;
 }
 .content .rightcol
@@ -44,7 +42,6 @@ padding-bottom:1vh;
 display: flex;
 	flex-direction: column;
 	background-color: blue;	
-	height: 90vh;
 	width: 20vw;
 }
 .footer
@@ -87,6 +84,7 @@ background-color: grey;
 	{
 		flex-direction: column;
 		font-size: 3rem;
+		height: 90vh;
 	}
 	.content .leftcol
 	{
