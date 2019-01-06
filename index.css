@@ -1,0 +1,54 @@
+:root{
+	font-size: 16px;
+};
+.container
+{
+display: flex;
+flex-direction: column;	
+height: 100vh;
+flex-wrap: wrap;
+}
+.header
+{
+background-color: red;
+height: 20vh;
+width:100vw;
+}
+.content
+{
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+.content .leftcol
+{
+	display: flex;
+	flex-direction: column;
+	background-color: yellow;
+	height: 70vh;
+	width:20vw;
+}
+.content .maincontent
+{
+	display: flex;
+	flex-direction: column;
+	background-color: green;
+	height: 70vh;
+	width: 60vw;
+}
+.content .rightcol
+{
+display: flex;
+	flex-direction: column;
+	background-color: blue;	
+	height: 70vh;
+	width: 20vw;
+}
+.footer
+{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	width: 100vw;
+	height: 10vh;
+}
